@@ -19,7 +19,24 @@ function generatePassword(){
   if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)){
     return "Please enter a valid number."
   }
+  var upperCaseinput = confirm("Do you want uppercase characters?")
+  var lowerCaseinput = confirm("Lower case characters?")
+  var specialCharactersinput = confirm("Include special characters?")
+  var numbersInput = confirm("Include numbers?")
+  
+  if (!upperCaseinput && !lowerCaseinput && !specialCharactersinput && !numbersInput)
+  { return "Please make a selection of characters you would like to include in your password."
 }
+var password = ''
+var userInput = [] 
+if(upperCaseinput) userInput.push(['A','B','C','D','E','F','G','H', 'I', 'J', 'K', 'L', 'M', 'N','O','P','Q','R','S','T','V','W','X','Y','Z'])
+if(lowerCaseinput) userInput.push(['a','b','c'])
+if (specialCharactersinput) userInput.push(['!','@','#'])
+if (numbersInput) userInput.push(['0','1'])
+console.log(userInput)
+}
+
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
