@@ -4,4 +4,4 @@ I modified starter code to create an application that generates a random passwor
 
 The following image shows the web application's appearance and functionality:
 
-(./Assets/sample.gif)
+![Sample](https://github.com/zeebigbadkitty/mod-three-challenge/blob/js1/assets/sample.gif)
